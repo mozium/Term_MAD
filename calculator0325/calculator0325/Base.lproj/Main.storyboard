@@ -143,6 +143,7 @@
                                 </state>
                                 <connections>
                                     <action selector="num8:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PMT-BR-2wc"/>
+                                    <action selector="num8:" destination="8bC-Xf-vdC" eventType="touchUpInside" id="d7P-mf-u28"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1W-Px-cuz">
@@ -278,6 +279,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8CU-ym-2lq" secondAttribute="trailing" constant="20" id="xck-Ns-zcC"/>
                             <constraint firstItem="2IO-0O-lcD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ysE-zj-7Jh"/>
                         </constraints>
+                        <connections>
+                            <outlet property="something" destination="8CU-ym-2lq" id="hwL-l6-ANN"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="board" destination="8CU-ym-2lq" id="mbw-5f-cNR"/>
