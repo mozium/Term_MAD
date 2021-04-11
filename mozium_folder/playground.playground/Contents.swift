@@ -1,5 +1,20 @@
 import UIKit
 
+// HW1: Calculator
+var numstr = "1234.56"
+var intstr = "1234"
+var none = ""
+var dot = "."
+let check = numstr.components(separatedBy: ".")
+
+check[1].count
+numstr.contains(dot)
+
+Float(numstr)
+Float(intstr)
+Float(none)
+numstr.suffix(1)
+
 // 1. let not "immutable"
 var num: Int = 101
 let text: String = "\(num)"

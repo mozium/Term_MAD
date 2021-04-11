@@ -14,7 +14,9 @@ class ViewController: UIViewController {
 	var ram: Float = 0.0 // store on-going calculation temporarily
 	var cur: String = ""
 	var input_type: Bool = false // to indicate whether it is a number or an operator
+	var sequential: Bool = false // change displaying behavior for sequential calculation
 	var oper_type: Int = 0 // to indicate whether it is +, -, *, or /
+	var preoper_type: Int = 0 // for sequential calculation
 	var pre_input: Bool = false // to indicate whether the previous input is a number or an operater
 	var is_result: Bool = false // to indicate whether it is a culculated result
 	var dot_lock: Bool = false // to limit decimal point input
@@ -40,27 +42,61 @@ class ViewController: UIViewController {
 	}
 	
 	func refresh () -> Void {
+		if (pre != 0.0 && cur != "") {
+			if (input_type == false && pre_input == false) { // input a number, previously as well
+				// update the current number
+				cur = cur + "" // TO-DO
+			} else if (input_type == true && pre_input == false) { //input operator, previously a number
+				// here, the current number should be updated
+				sequential = true
+				if (oper_type == 1 || oper_type == 2) {
+					calculate(type: preoper_type)
+				} else if (oper_type == 3 || oper_type == 4) {
+					calculate(type: oper_type)
+				}
+			} else if (input_type == true && pre_input == true) { // input operator, previously as well
+				// here, simply change the operation mode
+				// do nothing
+			} else { // input number, previously an operator
+				if (is_result == true) {
+					let new_input: String = String(cur.suffix(1))
+					cur = new_input
+					is_result = false
+				}
+			}
+		} else {
+			if (input_type == false && pre_input == false) { // input a number, previously as well
+				// update the current number
+				cur = cur + "" // TO-DO
+			} else if (input_type == true && pre_input == false) { //input operator, previously a number
+				// here, the current number should be updated
+				if (is_result != true) {
+					pre = stringToFloat(stringNum: cur)
+					cur = ""
+				}
+			} else if (input_type == true && pre_input == true) { // input operator, previously as well
+				// here, simply change the operation mode
+				// do nothing
+			} else { // input number, previously an operator
+				if (is_result == true) {
+					pre = 0.0
+					let new_input: String = String(cur.suffix(1))
+					cur = new_input
+					is_result = false
+				}
+			}
+		}
+				
+		display.text = String(cur) // refresh the displayed text
+		// for testing
 		print(pre)
 		print(cur)
+		print(oper_type)
+		print(sequential)
 		print("-")
-
-		if (input_type == false && pre_input == false) { // input a number, previously as well
-			// update the current number
-			cur = cur + "" // TO-DO
-		} else if (input_type == true && pre_input == false) { //input operator, previously a number
-			// here, the current number should be updated
-			
-		} else if (input_type == true && pre_input == true) { // input operator, previously as well
-			// here, simply change the operation mode
-			
-		} else { // input number, previously an operator
-
-		}
-		
-		display.text = String(cur) // refresh the displayed text
 	}
 	
-	func calculate (num_0: Float, num_1: Float, type: Int) {
+	func calculate (type: Int) {
 		switch type {
 		case 1:
 			// addition
@@ -78,16 +114,24 @@ class ViewController: UIViewController {
 			pre = result
 		case 3:
 			// multiplication
-			let multiplicand: Float = pre
-			let multiplier: Float! = Float(cur) //TO-DO
-			let result: Float = multiplicand * multiplier
-			cur = String(result) // because more multiplication/division could come
+			if (sequential) {
+				
+			} else {
+				let multiplicand: Float = pre
+				let multiplier: Float! = Float(cur) //TO-DO
+				let result: Float = multiplicand * multiplier
+				cur = String(result) // because more multiplication/division could come
+			}
 		case 4:
 			// division
-			let dividend: Float = pre
-			let divisor: Float! = Float(cur) //TO-DO
-			let result: Float = dividend / divisor
-			cur = String(result)
+			if (sequential) {
+				
+			} else {
+				let dividend: Float = pre
+				let divisor: Float! = Float(cur) //TO-DO
+				let result: Float = dividend / divisor
+				cur = String(result)
+			}
 		case 5:
 			// modulus
 			// due to the limitation of Swift, it will convert 'pre' and 'cur' to integers first
@@ -99,6 +143,7 @@ class ViewController: UIViewController {
 		default:
 			oper_type = 0 // return the variable to non-specified status
 		}
+		is_result = true
 	}
 	
 	func stringToInt (stringNum: String) -> Int {
@@ -106,9 +151,16 @@ class ViewController: UIViewController {
 		return result
 	}
 	
+	func stringToFloat (stringNum: String) -> Float {
+		let result: Float! = Float(stringNum)
+		return result
+	}
+	
 	@IBAction func btn_clear(_ sender: Any) {
 		pre = 0.0
+		ram = 0.0
 		cur = ""
+		oper_type = 0
 		refresh()
 	}
 
@@ -116,6 +168,7 @@ class ViewController: UIViewController {
 		input_type = true
 		oper_type = 1
 		refresh()
+		preoper_type = 1
 		pre_input = true
 	}
 	
@@ -123,6 +176,7 @@ class ViewController: UIViewController {
 		input_type = true
 		oper_type = 2
 		refresh()
+		preoper_type = 2
 		pre_input = true
 	}
 	
@@ -130,6 +184,7 @@ class ViewController: UIViewController {
 		input_type = true
 		oper_type = 3
 		refresh()
+		preoper_type = 3
 		pre_input = true
 	}
 	
@@ -137,6 +192,7 @@ class ViewController: UIViewController {
 		input_type = true
 		oper_type = 4
 		refresh()
+		preoper_type = 4
 		pre_input = true
 	}
 	
@@ -148,11 +204,12 @@ class ViewController: UIViewController {
 	}
 	
 	@IBAction func btn_equal(_ sender: Any) {
-		let cal_cur = Float(cur)
+		input_type = true
 		if (cur != "") {
-			calculate(num_0: pre, num_1: cal_cur!, type: oper_type)
+			calculate(type: oper_type)
 		}
 		refresh()
+		pre_input = true
 	}
 	
 	@IBAction func btn_7(_ sender: Any) {
