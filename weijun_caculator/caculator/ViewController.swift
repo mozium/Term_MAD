@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttons(_ sender: UIButton) {
-        if label.text != "" && sender.tag != 11 && sender.tag != 16{
+        if label.text != "" && sender.tag != 11 && sender.tag != 16 && sender.tag != 17{
             
             previousNumber = Double(label.text!)!
             
@@ -53,7 +53,6 @@ class ViewController: UIViewController {
             else if sender.tag == 15{
                 label.text = "+";
             }
-            
             operation = sender.tag
             performingMath = true;
         }
@@ -77,6 +76,10 @@ class ViewController: UIViewController {
             numberOnScreen = 0;
             operation = 0;
         }
+//        else if sender.tag == 17{
+//            label.text =
+//                String(previousNumber % numberOnScreen)
+//        }
     }
     
 
