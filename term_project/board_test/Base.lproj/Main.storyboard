@@ -1,0 +1,1202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KRP-W5-FCz">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="LGF-F4-rHT">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Twf-vp-y0g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController navigationBarHidden="YES" id="KRP-W5-FCz" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="T7S-gg-gKx">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="YUP-tg-Rco"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-77" y="-704"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="BYZ-38-t0r" customClass="ViewController" customModule="board_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIO-xe-wFk">
+                                <rect key="frame" x="0.0" y="44" width="414" height="302"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vPL-jr-fYc">
+                                        <rect key="frame" x="302" y="126.5" width="50" height="49"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="vPL-jr-fYc" secondAttribute="height" multiplier="1:1" id="5yD-iH-CYj"/>
+                                            <constraint firstAttribute="width" constant="50" id="o9F-iZ-b3P"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Dx0-K3-MbM">
+                                        <rect key="frame" x="62" y="126.5" width="50" height="49"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="TU4-tn-5IZ"/>
+                                            <constraint firstAttribute="width" secondItem="Dx0-K3-MbM" secondAttribute="height" multiplier="1:1" id="XSw-UY-HYj"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand.point.left.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="NzJ-SX-dal">
+                                        <rect key="frame" x="127" y="138" width="30" height="25.5"/>
+                                        <color key="tintColor" systemColor="systemPinkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="NzJ-SX-dal" secondAttribute="height" multiplier="1:1" id="ZPn-6u-HNn"/>
+                                            <constraint firstAttribute="width" constant="30" id="l8r-9g-1CP"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand.point.right.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9tG-GK-kmM">
+                                        <rect key="frame" x="257" y="138" width="30" height="25.5"/>
+                                        <color key="tintColor" systemColor="systemPinkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="9tG-GK-kmM" secondAttribute="height" multiplier="1:1" id="UE8-He-9ey"/>
+                                            <constraint firstAttribute="width" constant="30" id="zjW-PX-BgF"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Black" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gwO-0c-fWQ">
+                                        <rect key="frame" x="166" y="130.5" width="82" height="41"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LNP-1d-LZw">
+                                        <rect key="frame" x="75" y="218" width="24" height="46.5"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="imy-6y-ter">
+                                        <rect key="frame" x="52" y="116.5" width="70" height="69"/>
+                                        <color key="tintColor" systemColor="systemPinkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="imy-6y-ter" secondAttribute="height" multiplier="1:1" id="BuI-ME-c80"/>
+                                            <constraint firstAttribute="width" constant="70" id="f5c-rP-Uwh"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gs0-lJ-6g0">
+                                        <rect key="frame" x="292" y="116.5" width="70" height="69"/>
+                                        <color key="tintColor" systemColor="systemPinkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="vNV-sx-cgN"/>
+                                            <constraint firstAttribute="width" secondItem="gs0-lJ-6g0" secondAttribute="height" multiplier="1:1" id="yaN-GU-Rtb"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PIA-sv-ajw">
+                                        <rect key="frame" x="315" y="218" width="24" height="46.5"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WJR-Al-iEZ">
+                                        <rect key="frame" x="200.5" y="218" width="13" height="46.5"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="gwO-0c-fWQ" firstAttribute="centerX" secondItem="cIO-xe-wFk" secondAttribute="centerX" id="3kN-Js-hh5"/>
+                                    <constraint firstItem="vPL-jr-fYc" firstAttribute="centerY" secondItem="gs0-lJ-6g0" secondAttribute="centerY" id="5bO-hf-Dzx"/>
+                                    <constraint firstItem="WJR-Al-iEZ" firstAttribute="centerX" secondItem="cIO-xe-wFk" secondAttribute="centerX" id="8Ev-vg-tlf"/>
+                                    <constraint firstItem="NzJ-SX-dal" firstAttribute="width" secondItem="NzJ-SX-dal" secondAttribute="height" multiplier="1:1" id="8fZ-wJ-BPN"/>
+                                    <constraint firstItem="imy-6y-ter" firstAttribute="centerX" secondItem="cIO-xe-wFk" secondAttribute="centerX" constant="-120" id="9Kf-yN-4pX"/>
+                                    <constraint firstItem="PIA-sv-ajw" firstAttribute="centerY" secondItem="cIO-xe-wFk" secondAttribute="centerY" constant="90" id="9Zg-OZ-c67"/>
+                                    <constraint firstItem="LNP-1d-LZw" firstAttribute="centerX" secondItem="cIO-xe-wFk" secondAttribute="centerX" constant="-120" id="9kr-nl-gXG"/>
+                                    <constraint firstItem="NzJ-SX-dal" firstAttribute="centerY" secondItem="gwO-0c-fWQ" secondAttribute="centerY" id="BAc-vJ-05k"/>
+                                    <constraint firstItem="9tG-GK-kmM" firstAttribute="width" secondItem="9tG-GK-kmM" secondAttribute="height" multiplier="1:1" id="BBJ-nn-ZF4"/>
+                                    <constraint firstItem="vPL-jr-fYc" firstAttribute="centerX" secondItem="gs0-lJ-6g0" secondAttribute="centerX" id="K1w-zU-3Cv"/>
+                                    <constraint firstItem="NzJ-SX-dal" firstAttribute="centerX" secondItem="gwO-0c-fWQ" secondAttribute="centerX" constant="-65" id="KtQ-SK-T6A"/>
+                                    <constraint firstItem="gs0-lJ-6g0" firstAttribute="centerX" secondItem="cIO-xe-wFk" secondAttribute="centerX" constant="120" id="LKj-1U-c9q"/>
+                                    <constraint firstItem="9tG-GK-kmM" firstAttribute="centerX" secondItem="gwO-0c-fWQ" secondAttribute="centerX" constant="65" id="QQz-ho-fyp"/>
+                                    <constraint firstItem="PIA-sv-ajw" firstAttribute="centerX" secondItem="cIO-xe-wFk" secondAttribute="centerX" constant="120" id="Z8y-WT-gkS"/>
+                                    <constraint firstItem="imy-6y-ter" firstAttribute="centerY" secondItem="cIO-xe-wFk" secondAttribute="centerY" id="bMr-aQ-Fhj"/>
+                                    <constraint firstItem="gs0-lJ-6g0" firstAttribute="centerY" secondItem="cIO-xe-wFk" secondAttribute="centerY" id="c1y-9A-dsW"/>
+                                    <constraint firstItem="Dx0-K3-MbM" firstAttribute="centerY" secondItem="imy-6y-ter" secondAttribute="centerY" id="hwb-Ng-Vyn"/>
+                                    <constraint firstItem="LNP-1d-LZw" firstAttribute="centerY" secondItem="cIO-xe-wFk" secondAttribute="centerY" constant="90" id="mfg-St-Bi3"/>
+                                    <constraint firstItem="Dx0-K3-MbM" firstAttribute="centerX" secondItem="imy-6y-ter" secondAttribute="centerX" id="t02-WN-0zg"/>
+                                    <constraint firstItem="9tG-GK-kmM" firstAttribute="width" secondItem="9tG-GK-kmM" secondAttribute="height" multiplier="1:1" id="tx2-o7-nxg"/>
+                                    <constraint firstItem="9tG-GK-kmM" firstAttribute="centerY" secondItem="gwO-0c-fWQ" secondAttribute="centerY" id="weq-Ac-wrS"/>
+                                    <constraint firstItem="gwO-0c-fWQ" firstAttribute="centerY" secondItem="cIO-xe-wFk" secondAttribute="centerY" id="yav-SA-DMG"/>
+                                    <constraint firstItem="WJR-Al-iEZ" firstAttribute="centerY" secondItem="cIO-xe-wFk" secondAttribute="centerY" constant="90" id="zwW-ZX-hXm"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O7i-p0-338">
+                                <rect key="frame" x="0.0" y="346" width="414" height="414"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board" translatesAutoresizingMaskIntoConstraints="NO" id="T5O-aR-Lu6">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2VS-g3-ew0">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="89g-ov-4tx">
+                                                <rect key="frame" x="0.0" y="0.0" width="52" height="414"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wM5-D7-IzF">
+                                                        <rect key="frame" x="0.0" y="0.0" width="52" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.19130522012710571" green="0.44313725490196076" blue="0.11445675045251846" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1bz-14-5a4"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpo-Um-wlP">
+                                                        <rect key="frame" x="0.0" y="52" width="52" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zay-Ev-YN3"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Y5-Ng-xY0">
+                                                        <rect key="frame" x="0.0" y="103.5" width="52" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XXR-TY-r4n"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pV7-dC-yFa">
+                                                        <rect key="frame" x="0.0" y="155.5" width="52" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.44764238595962524" blue="0.037736672908067703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nqV-pt-CMH"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yd-T2-ZVh">
+                                                        <rect key="frame" x="0.0" y="207" width="52" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jAD-Xp-aYl"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JuN-6Z-Sen">
+                                                        <rect key="frame" x="0.0" y="259" width="52" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B1c-fh-2dz"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0H5-iP-Tm0">
+                                                        <rect key="frame" x="0.0" y="310.5" width="52" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SUy-Ck-BWC"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Fa-GH-eVR">
+                                                        <rect key="frame" x="0.0" y="362.5" width="52" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="laU-js-WMk"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vNE-xs-pT1">
+                                                <rect key="frame" x="52" y="0.0" width="51.5" height="414"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OFg-I8-yRm">
+                                                        <rect key="frame" x="0.0" y="0.0" width="51.5" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kdO-je-4n2"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNs-Yp-Mvb">
+                                                        <rect key="frame" x="0.0" y="52" width="51.5" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7MV-Bo-vF7"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGu-fs-poR">
+                                                        <rect key="frame" x="0.0" y="103.5" width="51.5" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MNJ-8z-bMA"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCg-em-Z3c">
+                                                        <rect key="frame" x="0.0" y="155.5" width="51.5" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5be-G3-K7c"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SF4-Jj-2WK">
+                                                        <rect key="frame" x="0.0" y="207" width="51.5" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hWA-6B-1WW"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ht-1h-IgL">
+                                                        <rect key="frame" x="0.0" y="259" width="51.5" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IRw-EG-HxT"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfO-2x-kRs">
+                                                        <rect key="frame" x="0.0" y="310.5" width="51.5" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dmm-Wm-rhh"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6O-PP-vYb">
+                                                        <rect key="frame" x="0.0" y="362.5" width="51.5" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Y6-KR-vKX"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kcV-Bh-B2r">
+                                                <rect key="frame" x="103.5" y="0.0" width="52" height="414"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="len-jz-b6w">
+                                                        <rect key="frame" x="0.0" y="0.0" width="52" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K1E-kO-8Zk"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWK-2O-04I">
+                                                        <rect key="frame" x="0.0" y="52" width="52" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iw3-bh-20g"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaP-iZ-Hm9">
+                                                        <rect key="frame" x="0.0" y="103.5" width="52" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Muc-Un-vjL"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bh0-g1-0LW">
+                                                        <rect key="frame" x="0.0" y="155.5" width="52" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PL6-W3-Z2h"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgR-Oq-9bw">
+                                                        <rect key="frame" x="0.0" y="207" width="52" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I77-MP-WA7"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Heg-qr-4eO">
+                                                        <rect key="frame" x="0.0" y="259" width="52" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rfw-bQ-L4v"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFF-Ba-ZDJ">
+                                                        <rect key="frame" x="0.0" y="310.5" width="52" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rce-bd-a46"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPG-tE-faT">
+                                                        <rect key="frame" x="0.0" y="362.5" width="52" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YnE-ac-pqu"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1kV-cf-97I">
+                                                <rect key="frame" x="155.5" y="0.0" width="51.5" height="414"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4FH-0O-nRB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="51.5" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rYS-ru-VAC"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G45-ps-XCi">
+                                                        <rect key="frame" x="0.0" y="52" width="51.5" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZkV-YS-PEa"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="26" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUb-sO-fuJ">
+                                                        <rect key="frame" x="0.0" y="103.5" width="51.5" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ebc-nM-IxF"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="27" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gD1-Od-Id8">
+                                                        <rect key="frame" x="0.0" y="155.5" width="51.5" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" tag="28" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQm-XU-5hZ">
+                                                        <rect key="frame" x="0.0" y="207" width="51.5" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" tag="29" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6KJ-vo-zyQ">
+                                                        <rect key="frame" x="0.0" y="259" width="51.5" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CNe-ce-tIK"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8Q-gi-nH2">
+                                                        <rect key="frame" x="0.0" y="310.5" width="51.5" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hU9-n7-ReL"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="31" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXg-QS-lX8">
+                                                        <rect key="frame" x="0.0" y="362.5" width="51.5" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TCm-GN-yEQ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ftt-CG-kDH">
+                                                <rect key="frame" x="207" y="0.0" width="52" height="414"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="32" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1D-mt-47W">
+                                                        <rect key="frame" x="0.0" y="0.0" width="52" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JRj-WG-lYA"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="33" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8h2-tp-Mef">
+                                                        <rect key="frame" x="0.0" y="52" width="52" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JuJ-ys-nt0"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="34" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvY-CX-PhB">
+                                                        <rect key="frame" x="0.0" y="103.5" width="52" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CPq-HI-Okg"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="35" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQr-s8-QmD">
+                                                        <rect key="frame" x="0.0" y="155.5" width="52" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" tag="36" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47n-cr-GKY">
+                                                        <rect key="frame" x="0.0" y="207" width="52" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" tag="37" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5M-WE-5b7">
+                                                        <rect key="frame" x="0.0" y="259" width="52" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O37-En-mTP"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="38" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyK-0F-XVA">
+                                                        <rect key="frame" x="0.0" y="310.5" width="52" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4sh-wR-QoV"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="39" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5k-3h-FYF">
+                                                        <rect key="frame" x="0.0" y="362.5" width="52" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="isj-2V-x8N"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Fad-W5-iaU">
+                                                <rect key="frame" x="259" y="0.0" width="51.5" height="414"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="40" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UF7-LG-kyN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="51.5" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o3u-6f-IME"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="41" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEN-QP-vXQ">
+                                                        <rect key="frame" x="0.0" y="52" width="51.5" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WX8-GX-2Af"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="42" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ib-0r-yAR">
+                                                        <rect key="frame" x="0.0" y="103.5" width="51.5" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PFm-ER-yvH"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="43" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7w-eP-COH">
+                                                        <rect key="frame" x="0.0" y="155.5" width="51.5" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VgQ-QT-LFf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="44" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4oO-Jy-Na5">
+                                                        <rect key="frame" x="0.0" y="207" width="51.5" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v3M-L4-34N"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="45" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2h-8x-RlO">
+                                                        <rect key="frame" x="0.0" y="259" width="51.5" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W7L-dF-wB7"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="46" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAR-nC-Ka0">
+                                                        <rect key="frame" x="0.0" y="310.5" width="51.5" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V1q-Ax-6lC"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="47" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exb-VY-miT">
+                                                        <rect key="frame" x="0.0" y="362.5" width="51.5" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gDe-gb-3zf"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="7Qz-OH-cU0">
+                                                <rect key="frame" x="310.5" y="0.0" width="52" height="414"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="48" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yV7-3f-HKa">
+                                                        <rect key="frame" x="0.0" y="0.0" width="52" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tba-C2-QFm"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="49" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGQ-LF-3zh">
+                                                        <rect key="frame" x="0.0" y="52" width="52" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5im-tg-coB"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="50" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2u-9l-x4j">
+                                                        <rect key="frame" x="0.0" y="103.5" width="52" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EhN-O6-uWC"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="51" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9O-1U-Rrp">
+                                                        <rect key="frame" x="0.0" y="155.5" width="52" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ooa-bd-20o"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="52" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVX-Mb-5nH">
+                                                        <rect key="frame" x="0.0" y="207" width="52" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L8h-3Z-UKK"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="53" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQG-yk-ytZ">
+                                                        <rect key="frame" x="0.0" y="259" width="52" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yyz-s6-Cwt"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="54" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LzZ-YU-vBC">
+                                                        <rect key="frame" x="0.0" y="310.5" width="52" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NKq-M5-9KX"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="55" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8b6-4x-eqL">
+                                                        <rect key="frame" x="0.0" y="362.5" width="52" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vvG-ib-L8Y"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hAb-C1-fMB">
+                                                <rect key="frame" x="362.5" y="0.0" width="51.5" height="414"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="56" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kI3-Nx-Jon">
+                                                        <rect key="frame" x="0.0" y="0.0" width="51.5" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="62H-jU-9A3"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="57" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djF-iw-XoV">
+                                                        <rect key="frame" x="0.0" y="52" width="51.5" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tpc-Aw-nCE"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="58" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTN-cc-Pzt">
+                                                        <rect key="frame" x="0.0" y="103.5" width="51.5" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UFS-KK-Qwd"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="59" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jvk-2i-v0R">
+                                                        <rect key="frame" x="0.0" y="155.5" width="51.5" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jfR-nQ-FEs"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="60" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jG6-h1-YFY">
+                                                        <rect key="frame" x="0.0" y="207" width="51.5" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mAG-nb-yaY"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="61" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbb-ja-0st">
+                                                        <rect key="frame" x="0.0" y="259" width="51.5" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MIo-iS-ICk"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="62" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzT-sQ-XPe">
+                                                        <rect key="frame" x="0.0" y="310.5" width="51.5" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="167-fx-gPH"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="63" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ty-Mf-UnM">
+                                                        <rect key="frame" x="0.0" y="362.5" width="51.5" height="51.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.0" green="0.447642386" blue="0.037736572330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TsF-fv-pnu"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="T5O-aR-Lu6" firstAttribute="centerY" secondItem="O7i-p0-338" secondAttribute="centerY" id="2Hj-dW-gT7"/>
+                                    <constraint firstItem="T5O-aR-Lu6" firstAttribute="width" secondItem="O7i-p0-338" secondAttribute="width" id="BHn-Oe-JNB"/>
+                                    <constraint firstItem="2VS-g3-ew0" firstAttribute="height" secondItem="O7i-p0-338" secondAttribute="height" id="P0z-sQ-aM4"/>
+                                    <constraint firstItem="T5O-aR-Lu6" firstAttribute="centerX" secondItem="O7i-p0-338" secondAttribute="centerX" id="WzO-Sh-aZW"/>
+                                    <constraint firstItem="T5O-aR-Lu6" firstAttribute="height" secondItem="O7i-p0-338" secondAttribute="height" id="X17-TC-V0R"/>
+                                    <constraint firstAttribute="width" secondItem="O7i-p0-338" secondAttribute="height" multiplier="1:1" id="bud-XF-vY7"/>
+                                    <constraint firstItem="2VS-g3-ew0" firstAttribute="centerY" secondItem="O7i-p0-338" secondAttribute="centerY" id="eSw-t3-IuA"/>
+                                    <constraint firstItem="2VS-g3-ew0" firstAttribute="centerX" secondItem="O7i-p0-338" secondAttribute="centerX" id="evc-fr-f7f"/>
+                                    <constraint firstItem="2VS-g3-ew0" firstAttribute="width" secondItem="O7i-p0-338" secondAttribute="width" id="iVQ-Vi-Hld"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSB-P0-l0q">
+                                <rect key="frame" x="324" y="65" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jSB-P0-l0q" secondAttribute="height" multiplier="1:1" id="IlM-wt-nDh"/>
+                                    <constraint firstAttribute="width" constant="60" id="sF5-hN-9j1"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" image="arrow.counterclockwise.circle.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
+                                </state>
+                                <connections>
+                                    <action selector="refresh_button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a88-oK-Vpo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cIO-xe-wFk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2R2-4R-Rgn"/>
+                            <constraint firstItem="O7i-p0-338" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="100" id="JnX-8u-UpY"/>
+                            <constraint firstItem="cIO-xe-wFk" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="KkO-Km-QRI"/>
+                            <constraint firstItem="O7i-p0-338" firstAttribute="top" secondItem="cIO-xe-wFk" secondAttribute="bottom" id="Mwz-O2-7Lt"/>
+                            <constraint firstItem="O7i-p0-338" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="Pmt-5m-WSw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="cIO-xe-wFk" secondAttribute="top" id="dW6-wm-4Op"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jSB-P0-l0q" secondAttribute="trailing" constant="30" id="eoS-Nc-yzD"/>
+                            <constraint firstItem="jSB-P0-l0q" firstAttribute="centerY" secondItem="cIO-xe-wFk" secondAttribute="centerY" constant="-100" id="ghI-lR-Es6"/>
+                            <constraint firstItem="O7i-p0-338" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kYV-9b-gvc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tMG-gn-BGk"/>
+                    <connections>
+                        <outlet property="a11" destination="wM5-D7-IzF" id="bVt-fp-T6D"/>
+                        <outlet property="a12" destination="OFg-I8-yRm" id="wIK-t3-GOQ"/>
+                        <outlet property="a13" destination="len-jz-b6w" id="oea-zx-aQW"/>
+                        <outlet property="a14" destination="4FH-0O-nRB" id="0cW-rC-YRg"/>
+                        <outlet property="a15" destination="c1D-mt-47W" id="ZCG-0o-wve"/>
+                        <outlet property="a16" destination="UF7-LG-kyN" id="5ww-vc-fK3"/>
+                        <outlet property="a17" destination="yV7-3f-HKa" id="Tuu-8F-Hpz"/>
+                        <outlet property="a18" destination="kI3-Nx-Jon" id="AHB-56-PAo"/>
+                        <outlet property="a21" destination="Gpo-Um-wlP" id="axn-z0-JG5"/>
+                        <outlet property="a22" destination="XNs-Yp-Mvb" id="QzG-QG-Q4z"/>
+                        <outlet property="a23" destination="rWK-2O-04I" id="VmV-Ok-8sg"/>
+                        <outlet property="a24" destination="G45-ps-XCi" id="jG4-RI-iad"/>
+                        <outlet property="a25" destination="8h2-tp-Mef" id="j5Z-Jd-n7C"/>
+                        <outlet property="a26" destination="tEN-QP-vXQ" id="6Ds-7G-qoA"/>
+                        <outlet property="a27" destination="lGQ-LF-3zh" id="Ote-xd-kKL"/>
+                        <outlet property="a28" destination="djF-iw-XoV" id="qlH-QW-NeR"/>
+                        <outlet property="a31" destination="9Y5-Ng-xY0" id="4Fy-yR-nsF"/>
+                        <outlet property="a32" destination="IGu-fs-poR" id="iJx-uO-Wnm"/>
+                        <outlet property="a33" destination="GaP-iZ-Hm9" id="Xhh-z1-5XB"/>
+                        <outlet property="a34" destination="kUb-sO-fuJ" id="8Py-NI-3zj"/>
+                        <outlet property="a35" destination="xvY-CX-PhB" id="eDA-BZ-WDi"/>
+                        <outlet property="a36" destination="4Ib-0r-yAR" id="YRb-Qf-bqr"/>
+                        <outlet property="a37" destination="k2u-9l-x4j" id="miM-Zj-P6W"/>
+                        <outlet property="a38" destination="yTN-cc-Pzt" id="vJO-0t-Bme"/>
+                        <outlet property="a41" destination="pV7-dC-yFa" id="RWe-Qb-Xch"/>
+                        <outlet property="a42" destination="UCg-em-Z3c" id="R40-DI-WgR"/>
+                        <outlet property="a43" destination="bh0-g1-0LW" id="Sq0-wf-W9S"/>
+                        <outlet property="a44" destination="gD1-Od-Id8" id="XD3-bT-tTw"/>
+                        <outlet property="a45" destination="dQr-s8-QmD" id="q1e-FC-62c"/>
+                        <outlet property="a46" destination="t7w-eP-COH" id="9jX-fO-yxL"/>
+                        <outlet property="a47" destination="t9O-1U-Rrp" id="9XA-Rx-lh5"/>
+                        <outlet property="a48" destination="Jvk-2i-v0R" id="WgY-7w-N5R"/>
+                        <outlet property="a51" destination="6yd-T2-ZVh" id="OP3-vo-XH9"/>
+                        <outlet property="a52" destination="SF4-Jj-2WK" id="NRU-02-D7M"/>
+                        <outlet property="a53" destination="PgR-Oq-9bw" id="UF0-zL-5op"/>
+                        <outlet property="a54" destination="KQm-XU-5hZ" id="jSv-rD-YHQ"/>
+                        <outlet property="a55" destination="47n-cr-GKY" id="nte-0Q-qVB"/>
+                        <outlet property="a56" destination="4oO-Jy-Na5" id="NNb-eC-IyG"/>
+                        <outlet property="a57" destination="rVX-Mb-5nH" id="vuC-SR-xOC"/>
+                        <outlet property="a58" destination="jG6-h1-YFY" id="iKu-Fm-9uP"/>
+                        <outlet property="a61" destination="JuN-6Z-Sen" id="B9w-0Z-9Vc"/>
+                        <outlet property="a62" destination="4Ht-1h-IgL" id="QVx-NJ-tie"/>
+                        <outlet property="a63" destination="Heg-qr-4eO" id="pbg-ia-qVY"/>
+                        <outlet property="a64" destination="6KJ-vo-zyQ" id="xBY-ha-NDT"/>
+                        <outlet property="a65" destination="m5M-WE-5b7" id="QwK-d5-sXC"/>
+                        <outlet property="a66" destination="s2h-8x-RlO" id="Hny-vi-MYC"/>
+                        <outlet property="a67" destination="iQG-yk-ytZ" id="lc5-V7-1gc"/>
+                        <outlet property="a68" destination="nbb-ja-0st" id="qNt-Ac-1zZ"/>
+                        <outlet property="a71" destination="0H5-iP-Tm0" id="RC1-IY-CDh"/>
+                        <outlet property="a72" destination="dfO-2x-kRs" id="Y4o-G4-sdK"/>
+                        <outlet property="a73" destination="RFF-Ba-ZDJ" id="dhc-uv-mAI"/>
+                        <outlet property="a74" destination="F8Q-gi-nH2" id="PeX-C6-Xo7"/>
+                        <outlet property="a75" destination="lyK-0F-XVA" id="vUY-Zx-hSG"/>
+                        <outlet property="a76" destination="lAR-nC-Ka0" id="mGq-mB-m5a"/>
+                        <outlet property="a77" destination="LzZ-YU-vBC" id="Fan-i9-Q1b"/>
+                        <outlet property="a78" destination="bzT-sQ-XPe" id="adx-f3-6TJ"/>
+                        <outlet property="a81" destination="7Fa-GH-eVR" id="qPZ-of-jNK"/>
+                        <outlet property="a82" destination="O6O-PP-vYb" id="X0p-oZ-dtz"/>
+                        <outlet property="a83" destination="nPG-tE-faT" id="rDE-pa-u4Q"/>
+                        <outlet property="a84" destination="cXg-QS-lX8" id="IlA-Ed-lQI"/>
+                        <outlet property="a85" destination="W5k-3h-FYF" id="DO3-eO-hgA"/>
+                        <outlet property="a86" destination="exb-VY-miT" id="hxG-WZ-EPe"/>
+                        <outlet property="a87" destination="8b6-4x-eqL" id="Jyh-6v-tXL"/>
+                        <outlet property="a88" destination="2Ty-Mf-UnM" id="Fjn-Fy-l9n"/>
+                        <outlet property="blackPoint" destination="LNP-1d-LZw" id="8P0-f4-Art"/>
+                        <outlet property="leftHand" destination="NzJ-SX-dal" id="GBE-L1-WES"/>
+                        <outlet property="leftRed" destination="imy-6y-ter" id="dCP-YH-2yh"/>
+                        <outlet property="refresh_button_oulet" destination="jSB-P0-l0q" id="MR8-8X-h8r"/>
+                        <outlet property="rightHand" destination="9tG-GK-kmM" id="ZvU-Xc-SK3"/>
+                        <outlet property="rightRed" destination="gs0-lJ-6g0" id="5Cp-ui-ogl"/>
+                        <outlet property="whitePoint" destination="PIA-sv-ajw" id="LbY-li-qND"/>
+                        <outlet property="who" destination="gwO-0c-fWQ" id="lqg-Oo-DWh"/>
+                        <segue destination="WGX-Nn-4e7" kind="presentation" identifier="GoSecond" id="7BJ-6B-FZY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28" y="70"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="iH7-0g-bLg">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="WGX-Nn-4e7" customClass="secondViewController" customModule="board_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h2I-ST-89b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KLc-D9-c9a">
+                                <rect key="frame" x="30" y="343.5" width="354" height="269"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eRf-CJ-rgZ">
+                                        <rect key="frame" x="0.0" y="1" width="354" height="266.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="1" green="0.82230444650000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <imageReference key="image" image="rectangle.fill" catalog="system" renderingMode="template"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXS-gG-b9Q">
+                                        <rect key="frame" x="0.0" y="45" width="354" height="135"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="40"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXk-0n-2nq">
+                                        <rect key="frame" x="127" y="179" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="0vs-vx-bnV"/>
+                                            <constraint firstAttribute="width" secondItem="JXk-0n-2nq" secondAttribute="height" multiplier="1:1" id="eJS-H0-ume"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.8860247461928934" green="0.51874007886384799" blue="0.0064532264537031639" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="circle.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="90"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7Y-N1-kSZ">
+                                        <rect key="frame" x="137" y="189" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="G7Y-N1-kSZ" secondAttribute="height" multiplier="1:1" id="5ir-tz-GbJ"/>
+                                            <constraint firstAttribute="width" constant="80" id="cRX-l6-pX5"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                        <state key="normal" image="circle.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="90"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4R-jM-ihA">
+                                        <rect key="frame" x="137" y="189" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="DhY-kP-Frw"/>
+                                            <constraint firstAttribute="width" secondItem="v4R-jM-ihA" secondAttribute="height" multiplier="1:1" id="KbF-5m-PJP"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                                        <state key="normal" image="arrow.counterclockwise.circle.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="90"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="QHj-GV-h8X"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="v4R-jM-ihA" firstAttribute="bottom" secondItem="eRf-CJ-rgZ" secondAttribute="bottom" id="7Fd-6V-w5h"/>
+                                    <constraint firstItem="G7Y-N1-kSZ" firstAttribute="centerX" secondItem="v4R-jM-ihA" secondAttribute="centerX" id="8N0-MP-ts1"/>
+                                    <constraint firstItem="JXk-0n-2nq" firstAttribute="centerY" secondItem="v4R-jM-ihA" secondAttribute="centerY" id="BCE-r8-7si"/>
+                                    <constraint firstItem="JXk-0n-2nq" firstAttribute="width" secondItem="JXk-0n-2nq" secondAttribute="height" multiplier="1:1" id="CTV-lK-vXX"/>
+                                    <constraint firstItem="eRf-CJ-rgZ" firstAttribute="centerX" secondItem="KLc-D9-c9a" secondAttribute="centerX" id="EWE-D9-bF6"/>
+                                    <constraint firstItem="eRf-CJ-rgZ" firstAttribute="height" secondItem="KLc-D9-c9a" secondAttribute="height" id="LIX-Ry-ayd"/>
+                                    <constraint firstItem="v4R-jM-ihA" firstAttribute="centerX" secondItem="eRf-CJ-rgZ" secondAttribute="centerX" id="Lw4-To-CI5"/>
+                                    <constraint firstItem="GXS-gG-b9Q" firstAttribute="centerX" secondItem="eRf-CJ-rgZ" secondAttribute="centerX" id="OWK-o2-qdB"/>
+                                    <constraint firstItem="JXk-0n-2nq" firstAttribute="centerX" secondItem="v4R-jM-ihA" secondAttribute="centerX" id="Riu-Mi-fO3"/>
+                                    <constraint firstItem="GXS-gG-b9Q" firstAttribute="width" secondItem="eRf-CJ-rgZ" secondAttribute="width" id="TLj-WU-CJn"/>
+                                    <constraint firstItem="GXS-gG-b9Q" firstAttribute="centerY" secondItem="eRf-CJ-rgZ" secondAttribute="centerY" constant="-22" id="a7H-y0-GUI"/>
+                                    <constraint firstItem="eRf-CJ-rgZ" firstAttribute="centerY" secondItem="KLc-D9-c9a" secondAttribute="centerY" id="cFU-0X-KJG"/>
+                                    <constraint firstItem="G7Y-N1-kSZ" firstAttribute="width" secondItem="G7Y-N1-kSZ" secondAttribute="height" multiplier="1:1" id="eny-WU-vKY"/>
+                                    <constraint firstItem="G7Y-N1-kSZ" firstAttribute="centerY" secondItem="v4R-jM-ihA" secondAttribute="centerY" id="fBA-Xs-fVX"/>
+                                    <constraint firstItem="GXS-gG-b9Q" firstAttribute="height" secondItem="eRf-CJ-rgZ" secondAttribute="height" multiplier="0.503817" id="iuC-vH-b83"/>
+                                    <constraint firstItem="eRf-CJ-rgZ" firstAttribute="width" secondItem="KLc-D9-c9a" secondAttribute="width" id="x7P-5Z-vdI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2YZ-Ol-Zgf"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KLc-D9-c9a" firstAttribute="centerY" secondItem="2YZ-Ol-Zgf" secondAttribute="centerY" constant="25" id="5NI-lU-i7x"/>
+                            <constraint firstItem="KLc-D9-c9a" firstAttribute="height" secondItem="h2I-ST-89b" secondAttribute="height" multiplier="0.3" id="CMT-QG-rei"/>
+                            <constraint firstItem="KLc-D9-c9a" firstAttribute="leading" secondItem="2YZ-Ol-Zgf" secondAttribute="leading" constant="30" id="SkT-SQ-S3w"/>
+                            <constraint firstItem="KLc-D9-c9a" firstAttribute="centerX" secondItem="2YZ-Ol-Zgf" secondAttribute="centerX" id="XuN-eq-OqO"/>
+                            <constraint firstItem="2YZ-Ol-Zgf" firstAttribute="trailing" secondItem="KLc-D9-c9a" secondAttribute="trailing" constant="30" id="afk-4v-L0k"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="AU0-th-1Q9"/>
+                    <connections>
+                        <outlet property="winText" destination="GXS-gG-b9Q" id="fbl-oa-Jgg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YXa-8R-bLY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042" y="70"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="YUP-tg-Rco"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="arrow.counterclockwise.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="board" width="965" height="965"/>
+        <image name="circle" catalog="system" width="128" height="121"/>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
+        <image name="hand.point.left.fill" catalog="system" width="128" height="99"/>
+        <image name="hand.point.right.fill" catalog="system" width="128" height="99"/>
+        <image name="rectangle.fill" catalog="system" width="128" height="93"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
