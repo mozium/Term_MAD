@@ -5,5 +5,5 @@ The repository is dedicated to the course "Mobile Application Development" of se
 * 106104033
 
 ### Shortcuts
-1. Group Assignment - Homework 1, please click [here](https://github.com/xczian/nccu_mobileapp/tree/master/hw1_calculator)
-2. Term Project - Reversi, please click [here](https://github.com/xczian/nccu_mobileapp/tree/master/term_project/board_test.xcodeproj) to locate the Xcode file.
+1. Group Assignment - Homework 1. Please click [here](https://github.com/xczian/nccu_mobileapp/tree/master/hw1_calculator)
+2. Term Project - Reversi. Please click [here](https://github.com/xczian/nccu_mobileapp/tree/master/term_project/)
