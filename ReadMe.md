@@ -4,11 +4,6 @@ The repository is dedicated to the course "Mobile Application Development" of se
 * 106306047
 * 106104033
 
-## Directories
-### Group Assignments
-1. [Homework 1](https://github.com/xczian/nccu_mobileapp/tree/master/hw1_calculator)
-2. [Term Project](https://github.com/xczian/nccu_mobileapp/tree/master/term_project), click [here](https://github.com/xczian/nccu_mobileapp/tree/master/term_project/board_test.xcodeproj) to locate the Xcode file.
-### Personal Directories
-1. [106308049](https://github.com/xczian/nccu_mobileapp/tree/master/mozium_folder)
-2. [106306047](https://github.com/xczian/nccu_mobileapp/tree/master/yiujing_folder)
-3. [106104033](https://github.com/xczian/nccu_mobileapp/tree/master/weijun_folder)
+### Shortcuts
+1. Group Assignment - Homework 1, [here](https://github.com/xczian/nccu_mobileapp/tree/master/hw1_calculator)
+2. Term Project - Reversi, [here](https://github.com/xczian/nccu_mobileapp/tree/master/term_project), click [here](https://github.com/xczian/nccu_mobileapp/tree/master/term_project/board_test.xcodeproj) to locate the Xcode file.
