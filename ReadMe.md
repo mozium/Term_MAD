@@ -1,5 +1,5 @@
 # ReadMe
-The repository is dedicated to the course "Mobile Application Development" of semester 109-2 (Spring 2021) at National Chengchi University. The team consisted of three people, the student IDs are listed below:
+The repository is dedicated to the course "Mobile Application Development" of semester 109-2 (Spring 2021) at National Chengchi University. The team consisted of three members, the student IDs are listed below:
 * 106308049
 * 106306047
 * 106104033
