@@ -1,5 +1,10 @@
 # ReadMe
-The repository is dedicated to the course "Mobile Application Development" of semester 1092 (Spring 2021) at National Chengchi University. The team consisted of three members, the student IDs are listed below:
+The repository is dedicated to a course at National Chengchi University.
+* Course Name: Mobile Application Development
+* Course ID: 781030001
+* Semester: Spring 2021 (1092)
+
+The team consisted of three members, the student IDs are listed below:
 * 106308049
 * 106306047
 * 106104033
