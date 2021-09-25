@@ -12,3 +12,5 @@ The team consisted of three members, the student IDs are listed below:
 ### Shortcuts
 1. Group Assignment - Homework 1. Please click [here](https://github.com/xczian/nccu_mobileapp/tree/master/hw1_calculator)
 2. Term Project - Reversi. Please click [here](https://github.com/xczian/nccu_mobileapp/tree/master/term_project/)
+
+The main responsibility of mine in the term project, was to develop appropriate algorithms to calculate the target stones of each move, and determine when it would take effect.
